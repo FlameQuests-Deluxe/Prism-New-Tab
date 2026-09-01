@@ -1,0 +1,44 @@
+{
+  "manifest_version": 2,
+  "name": "Container New Tab",
+  "version": "1.2",
+  "description": "Opens a custom new tab page with buttons for each container, specified URLs, and customizable backgrounds.",
+  "permissions": [
+    "tabs",
+    "contextualIdentities",
+    "cookies",
+    "storage",
+    "<all_urls>",
+    "unlimitedStorage"
+  ],
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "web_accessible_resources": [
+    "photo1.avif",
+    "photo2.avif",
+    "photo3.avif",
+    "photo4.avif",
+    "photo5.avif",
+    "abstract1.avif",
+    "abstract2.avif",
+    "abstract3.avif",
+    "abstract4.avif",
+    "abstract5.avif",
+    "abstract6.avif",
+    "abstract7.avif",
+    "abstract8.avif",
+    "settings.png",
+    "home.png"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{943003ee-5aba-47c7-9546-2a23a64eb763}"
+    }
+  }
+}

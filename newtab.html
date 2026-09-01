@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>New Tab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="newtab.css">
+</head>
+<body>
+  <div id="container-buttons"></div>
+  <div id="options-page" style="display: none;">
+    <div class="container">
+      <h1>Container New Tab Options</h1>
+      <div class="option-group">
+        <h2>Container URLs</h2>
+        <div class="container-header">
+          <button id="refresh-containers" class="refresh-button">Refresh Containers</button>
+        </div>
+        <form id="container-urls">
+          <!-- Container options will be dynamically added here -->
+        </form>
+      </div>
+
+      <div class="option-group">
+        <h2>Background Selection</h2>
+        <div class="radio-group">
+          <label class="radio">
+            <input type="radio" name="backgroundType" value="photo">
+            <span class="radio-custom"></span>
+            Photo
+          </label>
+          <label class="radio">
+            <input type="radio" name="backgroundType" value="abstract">
+            <span class="radio-custom"></span>
+            Abstract
+          </label>
+          <label class="radio">
+            <input type="radio" name="backgroundType" value="local">
+            <span class="radio-custom"></span>
+            Local Image
+          </label>
+        </div>
+        <input type="file" id="localImage" accept="image/*" style="display: none;">
+        <button id="chooseLocalImage" style="display: none;">Choose Local Image</button>
+      </div>
+
+      <button id="save" class="save-button">Save</button>
+    </div>
+  </div>
+  <div id="settings-icon">
+    <img src="settings.png" alt="Settings">
+  </div>
+  <div id="home-icon" style="display: none;">
+    <img src="home.png" alt="Home">
+  </div>
+  <script src="newtab.js"></script>
+</body>
+</html>
